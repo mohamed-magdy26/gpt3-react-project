@@ -1,0 +1,113 @@
+.gpt3__whatgpt3 {
+  scroll-margin-top: -1rem;
+}
+.gpt3__whatgpt3-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 2rem;
+  gap: 3rem 2rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 100% 100%,
+    rgba(28, 68, 129, 1) 0%,
+    rgba(7, 46, 88, 1) 31%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 100% 100%,
+    rgba(28, 68, 129, 1) 0%,
+    rgba(7, 46, 88, 1) 31%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 100% 100%,
+    rgba(28, 68, 129, 1) 0%,
+    rgba(7, 46, 88, 1) 31%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 100% 100%,
+    rgba(28, 68, 129, 1) 0%,
+    rgba(7, 46, 88, 1) 31%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 100% 100%,
+    rgba(28, 68, 129, 1) 0%,
+    rgba(7, 46, 88, 1) 31%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bg__elipse {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  opacity: 0.1;
+  background-color: transparent;
+  border-radius: 200px 100px 200px 100px;
+  border: 5px solid rgba(27, 120, 222, 0.6);
+}
+
+.gpt3__whatgpt3-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.gpt3__whatgpt3-heading h2 {
+  font-weight: 800;
+  font-size: 2.3rem;
+  flex: 0.9;
+}
+.gpt3__whatgpt3-heading p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--color-subtext);
+  text-align: end;
+  flex: 1;
+  cursor: pointer;
+}
+
+/* row Features container */
+.gpt3__whatgpt3-features__container {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 1050px) {
+  .gpt3__whatgpt3-features__container {
+    flex-wrap: wrap;
+  }
+
+  .gpt3__whatgpt3-heading h2 {
+    font-size: 1.7rem;
+  }
+  .gpt3__whatgpt3-heading p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gpt3__whatgpt3-heading {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .gpt3__whatgpt3-feature__title .gpt3__feature {
+    flex-direction: column;
+  }
+}

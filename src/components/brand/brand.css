@@ -1,0 +1,13 @@
+.gpt3__brand > .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .gpt3__brand > .container {
+    flex-direction: column;
+  }
+}

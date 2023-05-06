@@ -1,0 +1,64 @@
+.gpt3__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.gpt3__feature > p {
+  font-size: 16px;
+  flex: 1.3;
+  color: var(--color-text);
+}
+
+/* customizng it for whatgpt3 row container */
+.gpt3__whatgpt3-features__container .gpt3__feature {
+  flex: 1;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gpt3__feature-title {
+  flex: 0.5;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+
+.gpt3__feature-title div {
+  width: 40px;
+  height: 3px;
+  margin-bottom: 10px;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt3__whatgpt3-features__container .gpt3__feature {
+    flex: 1;
+    flex-direction: column;
+    min-width: 40%;
+    max-width: 50%;
+  }
+  .gpt3__features-heading .gpt3__feature {
+    flex-direction: column;
+  }
+  .gpt3__feature > p {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gpt3__whatgpt3-features__container {
+    flex-direction: column;
+  }
+
+  .gpt3__whatgpt3-features__container .gpt3__feature {
+    flex: 1;
+    flex-direction: column;
+    min-width: unset;
+    max-width: none;
+  }
+}
